@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import datetime as datetime
 
-testBit = Platform.Bittrex('8b66ec7b225a406e98332d5e7d87a45f', 'e3bcdfe6d4bc4a65a1b7f80aa1098c5a')
+testBit = Platform.Bittrex('redacted', 'redacted')
 bDB = Database(testBit, '/home/kevin/Development/TradingBot/Crypto_Markets/Bittrex_Market.db')
 stockData = np.array([x[1::] for x in bDB.selectValues('BTC-LTC', 'day')])
 
